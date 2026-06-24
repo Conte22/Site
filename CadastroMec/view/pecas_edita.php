@@ -13,17 +13,17 @@ $peca = $pecaController->buscarPorId($_GET['id']);
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Editar Pe&ccedil;a</title>
+    <title>Editar Peca</title>
 </head>
 <body style="font-family: sans-serif; max-width: 400px; margin: 30px auto;">
-    <h2>Editar Pe&ccedil;a</h2>
+    <h2>Editar Peca</h2>
     <form action="" method="POST">
         <input type="hidden" name="id" value="<?= $peca->getId() ?>">
 
-        Nome da Pe&ccedil;a *<br>
+        Nome da Peca *<br>
         <input type="text" name="nome" value="<?= htmlspecialchars($peca->getNome(), ENT_QUOTES, 'UTF-8') ?>" required><br><br>
 
-        Pre&ccedil;o *<br>
+        Preco *<br>
         <input type="text" name="preco_venda" value="<?= htmlspecialchars($peca->getPrecoVenda(), ENT_QUOTES, 'UTF-8') ?>" required><br><br>
 
         Estoque *<br>

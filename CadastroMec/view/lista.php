@@ -7,18 +7,18 @@ $ordens = (new OrdemServicoController())->listar();
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Ordens de Servi&ccedil;o</title>
+    <title>Ordens de Servico</title>
 </head>
 <body style="font-family: sans-serif; margin: 30px;">
-    <h2>Ordens de Servi&ccedil;o</h2>
+    <h2>Ordens de Servico</h2>
     <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
         <tr style="background: #f2f2f2;">
             <th>ID</th>
-            <th>Ve&iacute;culo</th>
+            <th>Veiculo</th>
             <th>Defeito</th>
-            <th>Pre&ccedil;o</th>
-            <th>Propriet&aacute;rio</th>
-            <th>A&ccedil;&otilde;es</th>
+            <th>Preco</th>
+            <th>Proprietario</th>
+            <th>Acoes</th>
         </tr>
         <?php foreach ($ordens as $ordem): ?>
             <tr>
@@ -38,7 +38,7 @@ $ordens = (new OrdemServicoController())->listar();
         <?php endforeach; ?>
     </table>
     <br>
-    <a href="cadastra.php">Nova Ordem de Servi&ccedil;o</a> |
+    <a href="cadastra.php">Nova Ordem de Servico</a> |
     <a href="index.php">Menu</a>
 </body>
 </html>

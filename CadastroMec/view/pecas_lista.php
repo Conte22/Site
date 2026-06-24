@@ -7,17 +7,17 @@ $pecas = (new PecaController())->listar();
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Pe&ccedil;as</title>
+    <title>Pecas</title>
 </head>
 <body style="font-family: sans-serif; margin: 30px;">
-    <h2>Estoque de Pe&ccedil;as</h2>
+    <h2>Estoque de Pecas</h2>
     <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
         <tr style="background: #f2f2f2;">
             <th>ID</th>
             <th>Nome</th>
-            <th>Pre&ccedil;o</th>
+            <th>Preco</th>
             <th>Estoque</th>
-            <th>A&ccedil;&otilde;es</th>
+            <th>Acoes</th>
         </tr>
         <?php foreach ($pecas as $peca): ?>
             <tr>
@@ -36,7 +36,7 @@ $pecas = (new PecaController())->listar();
         <?php endforeach; ?>
     </table>
     <br>
-    <a href="pecas_cadastra.php">Nova Pe&ccedil;a</a> |
+    <a href="pecas_cadastra.php">Nova Peca</a> |
     <a href="index.php">Menu</a>
 </body>
 </html>

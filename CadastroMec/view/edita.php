@@ -15,14 +15,14 @@ $clientes = (new ClienteController())->listar();
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Editar Ordem de Servi&ccedil;o</title>
+    <title>Editar Ordem de Servico</title>
 </head>
 <body style="font-family: sans-serif; max-width: 400px; margin: 30px auto;">
-    <h2>Editar Ordem de Servi&ccedil;o</h2>
+    <h2>Editar Ordem de Servico</h2>
     <form action="" method="POST">
         <input type="hidden" name="id" value="<?= $ordem->getId() ?>">
 
-        Ve&iacute;culo *<br>
+        Veiculo *<br>
         <input type="text" name="veiculo" value="<?= htmlspecialchars($ordem->getVeiculo(), ENT_QUOTES, 'UTF-8') ?>" required><br><br>
 
         Ano *<br>
@@ -31,7 +31,7 @@ $clientes = (new ClienteController())->listar();
         Defeito *<br>
         <textarea name="defeito" required><?= htmlspecialchars($ordem->getDefeito(), ENT_QUOTES, 'UTF-8') ?></textarea><br><br>
 
-        Pre&ccedil;o *<br>
+        Preco *<br>
         <input type="text" name="preco" value="<?= htmlspecialchars($ordem->getPreco(), ENT_QUOTES, 'UTF-8') ?>" required><br><br>
 
         Cliente<br>

@@ -17,7 +17,7 @@ $clientes = (new ClienteController())->listar();
             <th>Nome</th>
             <th>CEP</th>
             <th>Cidade</th>
-            <th>A&ccedil;&otilde;es</th>
+            <th>Acoes</th>
         </tr>
         <?php foreach ($clientes as $cliente): ?>
             <tr>

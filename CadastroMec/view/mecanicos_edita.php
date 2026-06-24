@@ -13,10 +13,10 @@ $mecanico = $mecanicoController->buscarPorId($_GET['id']);
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Editar Mec&acirc;nico</title>
+    <title>Editar Mecanico</title>
 </head>
 <body style="font-family: sans-serif; max-width: 400px; margin: 30px auto;">
-    <h2>Editar Mec&acirc;nico</h2>
+    <h2>Editar Mecanico</h2>
     <form action="" method="POST">
         <input type="hidden" name="id" value="<?= $mecanico->getId() ?>">
 

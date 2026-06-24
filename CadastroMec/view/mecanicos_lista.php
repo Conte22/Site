@@ -17,7 +17,7 @@ $mecanicos = (new MecanicoController())->listar();
             <th>Nome</th>
             <th>Especialidade</th>
             <th>Telefone</th>
-            <th>A&ccedil;&otilde;es</th>
+            <th>Acoes</th>
         </tr>
         <?php foreach ($mecanicos as $mecanico): ?>
             <tr>
@@ -36,7 +36,7 @@ $mecanicos = (new MecanicoController())->listar();
         <?php endforeach; ?>
     </table>
     <br>
-    <a href="mecanicos_cadastra.php">Novo Mec&acirc;nico</a> |
+    <a href="mecanicos_cadastra.php">Novo Mecanico</a> |
     <a href="index.php">Menu</a>
 </body>
 </html>

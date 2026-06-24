@@ -12,12 +12,12 @@ $clientes = (new ClienteController())->listar();
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Nova Ordem de Servi&ccedil;o</title>
+    <title>Nova Ordem de Servico</title>
 </head>
 <body style="font-family: sans-serif; max-width: 400px; margin: 30px auto;">
-    <h2>Abrir Ordem de Servi&ccedil;o</h2>
+    <h2>Abrir Ordem de Servico</h2>
     <form action="" method="POST">
-        Ve&iacute;culo *<br>
+        Veiculo *<br>
         <input type="text" name="veiculo" style="width: 100%;" required><br><br>
 
         Ano *<br>
@@ -26,10 +26,10 @@ $clientes = (new ClienteController())->listar();
         Defeito *<br>
         <textarea name="defeito" style="width: 100%;" required></textarea><br><br>
 
-        Pre&ccedil;o *<br>
+        Preco *<br>
         <input type="text" name="preco" style="width: 100%;" required><br><br>
 
-        Cliente Propriet&aacute;rio<br>
+        Cliente Proprietario<br>
         <select name="cliente_id" style="width: 100%;">
             <option value="">-- Selecione --</option>
             <?php foreach ($clientes as $cliente): ?>
