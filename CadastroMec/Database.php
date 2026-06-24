@@ -1,11 +1,10 @@
 <?php
 
-class Database
-<?php
 class Database {
     public $connection;
 
     public function __construct() {
+
         $host = "127.0.0.1";
         $port = "5432";
         $dbname = "futebol";
