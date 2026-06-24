@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS clientes (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cep VARCHAR(9) NOT NULL,
+    cidade VARCHAR(100),
+    bairro VARCHAR(100),
+    rua VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS ordens_servico (
+    id SERIAL PRIMARY KEY,
+    veiculo VARCHAR(255) NOT NULL,
+    ano VARCHAR(50) NOT NULL,
+    defeito TEXT NOT NULL,
+    preco VARCHAR(100) NOT NULL,
+    cliente_id INTEGER REFERENCES clientes(id) ON DELETE SET NULL
+);
+
+CREATE TABLE IF NOT EXISTS mecanicos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    especialidade VARCHAR(100) NOT NULL,
+    telefone VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS pecas (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    preco_venda VARCHAR(100) NOT NULL,
+    estoque INTEGER NOT NULL
+);
