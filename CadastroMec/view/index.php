@@ -12,7 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; 
+            height: 100vh;
         }
 
         .panel-container {
@@ -48,23 +48,23 @@
         }
 
         a {
-    display: block;
-    text-decoration: none;
-    color: #4a5568; 
-    font-weight: 500;
-    padding: 12px;
-    border: 1px solid #e2e8f0;
-    border-radius: 6px;
-    transition: all 0.2s ease-in-out;
-    background-color: #ffffff;
-    cursor: pointer; 
-}
+            display: block;
+            text-decoration: none;
+            color: #4a5568; 
+            font-weight: 500;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            background-color: #ffffff;
+            cursor: pointer; 
+            transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+        }
 
+        
         a:hover {
-            background-color: #3182ce;
-            color: #ffffff;
-            border-color: #3182ce;
-            transform: translateY(-2px);
+            color: #000000;
+            border-color: #a0aec0; 
+            background-color: #ffffff; 
         }
     </style>
 </head>
@@ -75,7 +75,7 @@
         <hr>
         <ul>
             <li><a href="clientes_lista.php">Cadastro de Clientes</a></li>
-            <li><a href="lista.php">Ordens de Serviço (OS)</a></li>
+            <li><a href="lista.php">Ordens de Serviço</a></li>
             <li><a href="mecanicos_lista.php">Controle de Mecânicos</a></li>
             <li><a href="pecas_lista.php">Estoque de Peças</a></li>
             <li><a href="feedbacks_mural.php">Mural de Feedbacks</a></li>
