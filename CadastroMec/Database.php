@@ -7,9 +7,9 @@ class Database {
 
         $host = "127.0.0.1";
         $port = "5432";
-        $dbname = "futebol";
-        $user = "app";
-        $password = "secret";
+        $dbname = "gabriel_conte";
+        $user = "gabriel_conte";
+        $password = "734646e777c19f153dc2";
 
         try {
             $this->connection = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $user, $password);
