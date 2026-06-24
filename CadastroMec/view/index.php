@@ -48,15 +48,17 @@
         }
 
         a {
-            display: block;
-            text-decoration: none;
-            color: #4a5568;
-            padding: 12px;
-            border: 1px solid #e2e8f0;
-            border-radius: 6px;
-            transition: all 0.2s ease-in-out;
-            background-color: #ffffff;
-        }
+    display: block;
+    text-decoration: none;
+    color: #4a5568; 
+    font-weight: 500;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    background-color: #ffffff;
+    cursor: pointer; 
+}
 
         a:hover {
             background-color: #3182ce;
